@@ -16,11 +16,11 @@ int numberOfSteps (int num);
 
 int main(void)
 {
-    printf("%i", numberOfSteps(123));
+    printf("%i", numberOfSteps(14));
 }
 
 int numberOfSteps (int num){
-    int count;
+    int count = 0; //Fixed bug, not initializing count to 0 was causing bugs on Leetcode Live Compiler. 
     while (num > 0)
     {
         if (num % 2 == 0)
