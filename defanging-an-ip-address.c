@@ -7,7 +7,7 @@
     Pending Submit, leetcode platform is currently having issues
 */
 
-#include <stdio.h>
+#include <stdio.h> 
 #include <string.h>
 #include <stdlib.h>
 
@@ -21,10 +21,11 @@ int main(void)
 
 char * defangIPaddr(char * address){
     char *defangedAddress;
-    defangedAddress = malloc(sizeof(address) + 6);
+    defangedAddress = malloc(sizeof(address) + 10);
     int j = 0;
     
-    int length = strlen(address);
+    int length = 0;
+    length = strlen(address);
     for (int i = 0; i < length; i++)
     {
         if(address[i] == '.')
