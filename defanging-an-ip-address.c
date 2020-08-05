@@ -23,7 +23,7 @@ int main(void)
 
 char * defangIPaddr(char * address){
     char *defangedAddress;
-    defangedAddress = malloc(sizeof(address) + 10);
+    defangedAddress = malloc(50*sizeof(char)); //Create space for this new address. 
     int j = 0;
     
     int length = 0;
